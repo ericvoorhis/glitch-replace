@@ -5,10 +5,6 @@ import qualified Data.ByteString.Char8 as B
 import Data.String.Utils
 import qualified System.Random as R
 
-key = 10
-generateKey :: Int -> [Char]
-generateKey s = map (chr) (map (`mod` 255) (take s (R.randoms $ R.mkStdGen key)))
-
 print_ a = do
     mapM_ (print) a
     putStrLn "\n"
