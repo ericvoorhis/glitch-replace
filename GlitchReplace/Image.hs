@@ -1,4 +1,4 @@
-module GlitchReplace.Replace
+module GlitchReplace.Image
 ( replace
 ) where
 
