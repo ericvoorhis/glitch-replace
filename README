@@ -30,3 +30,12 @@
      ~ Where are the docs?
 
        *sassy cricket*
+       
+       After compiling to exe, use the command like so, 
+       ```
+       greplace <file name> <single char> <replacement string>
+       ```
+       Example:
+       ```
+       greplace forest.bmp \n \r\n
+       ```
