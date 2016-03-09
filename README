@@ -1,0 +1,29 @@
+         
+
+
+                         ^* glitch_replace 
+
+            G : I -> A | I = image, A = aesthetic pleasure
+
+
+     ~ What is glich_replace?
+
+       glitch_replace is a self-contained library for 
+       renovating images as glitch art.
+
+     ~ Where are examples?
+
+       Take a gander at the folder, info, for the 
+       pre and post images.
+
+     ~ What do I need?
+
+       `cabal install` will download any Haskell
+       libraries required by glich_replace. However,
+       later in development non-native
+       Haskell libraries may be used. But, we'll 
+       get to that when the time comes.
+
+     ~ Where are the docs?
+
+       *sassy cricket*
