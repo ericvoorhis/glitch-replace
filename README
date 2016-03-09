@@ -1,5 +1,4 @@
-         
-
+  
 
                          ^* glitch_replace 
 
@@ -11,10 +10,13 @@
        glitch_replace is a self-contained library for 
        renovating images as glitch art.
 
-     ~ Where are examples?
+
+     ~ Examples of glitch_effect?
 
        Take a gander at the folder, info, for the 
-       pre and post images.
+       post effects of images run through glitch_effect
+       along with their pre selves.
+
 
      ~ What do I need?
 
@@ -23,6 +25,7 @@
        later in development non-native
        Haskell libraries may be used. But, we'll 
        get to that when the time comes.
+
 
      ~ Where are the docs?
 
