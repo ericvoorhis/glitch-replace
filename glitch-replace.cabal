@@ -3,24 +3,34 @@
 
 name:                glitch-replace
 version:             0.0.1.0
--- synopsis:            
--- description:         
+description:         A library for generating aesthetically pleasing glitch art
 homepage:            https://github.com/ericvoorhis/glitch-replace
 license:             MIT
 license-file:        LICENSE
 author:              [Eric Voorhis, Richard Protasov]
 maintainer:          [eric.voorhis14@ncf.edu, richardprotasov@gmail.com]
--- copyright:           
 category:            Graphics
 synopsis:            A library for generating aesthetically pleasing glitch art
 build-type:          Simple
--- extra-source-files:  
 cabal-version:       >=1.10
 
+source-repository head 
+  type: git
+  location: https://github.com/ericvoorhis/glitch-replace
+
 library
-  -- exposed-modules:     
+  exposed-modules: 
+    GlitchReplace
+    GlitchReplace.Image   
   -- other-modules:       
-  -- other-extensions:    
-  build-depends:       base >=4.8 && <4.9
-  hs-source-dirs:      GlitchReplace
+  -- other-extensions:  
+  hs-source-dirs:    src
+  build-depends:       
+    base          >= 4.8 && < 4.9,
+    random,
+    MissingH,
+    bytestring
+    -- linear        >= 1.2 && < 2.0,
+    -- vector,
+  
   default-language:    Haskell2010
