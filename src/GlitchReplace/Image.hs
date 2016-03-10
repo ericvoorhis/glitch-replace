@@ -1,24 +1,21 @@
 module GlitchReplace.Image
-( replace
+( replaceWith
 ) where
 
 import Data.Char
-import qualified Data.ByteString.Char8 as B
-import qualified Data.String.Utils as S
-import qualified System.Random as R
+import qualified Data.ByteString.Char8 as Char8
+import qualified Data.String.Utils     as StringUtils
+import qualified System.Random         as Random
 
-escapeChars = [("\\n", "\n"), ("\\r", "\r"), ("\\t", "\t")]
+escapeChars = [("\\n", "\n"), ("\\r", "\r"), ("\\t", "\\t")]
 
-print' a = do
-    mapM_ (print) a
-    putStrLn "\n"
+replaceWith' :: Char -> [Char] -> [Char] -> [Char]
+replaceWith' _ _ [] = []
+replaceWith' swap with (x:xs) = item ++ (replaceWith' swap with xs)
+    where item = 
+            if x == swap
+            then with
+            else [x]
 
-cycleThrough :: [(String, String)] -> String -> String
-cycleThrough xs str = foldl (replace') str xs
-    where replace' bytes (match, sub) = S.replace match sub bytes
-
-replace' :: Char -> Char -> [Char] -> [Char]
-replace' match sub xs = map (\x -> if x == match then sub else x) xs
-
-replace :: Char -> Char -> [Char] -> B.ByteString
-replace swap with img = B.pack $ replace' swap with img
+replaceWith :: Char -> [Char] -> [Char] -> Char8.ByteString
+replaceWith s w i = Char8.pack . replaceWith' s w $ i

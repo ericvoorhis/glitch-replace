@@ -1,6 +1,6 @@
-import qualified GlitchReplace.Image as G
+import qualified GlitchReplace.Image   as Glitch
+import qualified Data.ByteString.Char8 as Char8
 import System.IO
-import qualified Data.ByteString.Char8 as B
 
 main = do 
 
@@ -13,11 +13,11 @@ main = do
     let image = contents
 
     -- Replaces'\n' with '\r\n'
-    let alteredImage = G.replace '\n' 'a' image
+    let alteredImage = Glitch.replaceWith '\n' "\r\n" image
 
     -- Save the file
     let newfilepath = "../info/forestReplaced.bmp" 
-    B.writeFile newfilepath alteredImage
+    Char8.writeFile newfilepath alteredImage
 
     -- Close the handle, and we're done ✨
     hClose handle
