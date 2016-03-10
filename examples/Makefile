@@ -12,8 +12,6 @@ $(OBJDIR)/% : %.hs
 
 all : $(OBJS)
 
-all : $(OBJS)
-
 $(OBJS) : | $(OBJDIR)
 
 %.o : %.hs
