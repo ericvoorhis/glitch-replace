@@ -1,27 +1,27 @@
   
 
-                         ^* glitch_replace 
+                         ^.^ salad 
 
-            G : I -> A | I = image, A = aesthetic pleasure
-
-
-     ~ What is glich_replace?
-
-       glitch_replace is a self-contained library for 
-       renovating images as glitch art.
+            S : I -> A | I = image, A = aesthetic deliciousness
 
 
-     ~ Examples of glitch_effect?
+     ~ What is Salad?
+
+       Salad is a self-contained library for 
+       producing fresh and crisp glitch art.
+
+
+     ~ Examples of Salad?
 
        Take a gander at the folder, info, for the 
-       post effects of images run through glitch_effect
-       along with their pre selves.
+       post effects of images run through Salad
+       along with their pre self.
 
 
      ~ What do I need?
 
        `cabal install` will download any Haskell
-       libraries required by glich_replace. However,
+       libraries required by Salad. However,
        later in development non-native
        Haskell libraries may be used. But, we'll 
        get to that when the time comes.

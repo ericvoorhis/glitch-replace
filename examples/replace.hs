@@ -1,4 +1,4 @@
-import qualified GlitchReplace.Image   as Glitch
+import qualified Salad.Image as Salad
 import qualified Data.ByteString.Char8 as Char8
 import System.IO
 
@@ -13,7 +13,7 @@ main = do
     let image = contents
 
     -- Replaces'\n' with '\r\n'
-    let alteredImage = Glitch.replaceWith '\n' "\r\n" image
+    let alteredImage = Salad.swap '\n' "\r\n" image
 
     -- Save the file
     let newfilepath = "../info/forestReplaced.bmp" 

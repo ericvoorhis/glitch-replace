@@ -22,4 +22,4 @@ $(OBJDIR) :
 
 .PHONY : clean
 clean :
-	rm -fr $(OBJDIR) $(CRYPTDIR)/*.o $(CRYPTDIR)/*.hi | true
+	rm -rf $(OBJDIR)
